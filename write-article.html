@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Write an Article | IDSC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><span>IDSC.</span></div>
+<div id="page-transition"></div>
+<div class="cursor-glow"></div>
+<div class="bg-fx"><div class="blob blob-1"></div><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+
+<nav>
+    <a href="index.html" class="brand">IDSC<span class="brand-dot">.</span></a>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="community.html" class="active">Community</a>
+        <a href="team.html">Team</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+        <a href="join.html" class="btn-outline">Join</a>
+        <a href="login.html" class="btn-primary">Login</a>
+    </div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<main>
+    <section class="hero-small" style="min-height:34vh;">
+        <div class="hero-eyebrow"><span class="pulse"></span> Member contributions</div>
+        <h1>Write an <span class="gradient">Article</span></h1>
+        <p class="sub">Share what you've built, learned or shipped with the IDSC community.</p>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+        <div class="grid grid-2" style="align-items:start; gap:36px;">
+            <div class="card reveal-left">
+                <form id="articleForm">
+                    <div class="form-group">
+                        <label for="artTitle">Article Title</label>
+                        <input id="artTitle" type="text" class="form-control" placeholder="Give your article a clear, specific title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="artCategory">Category</label>
+                        <select id="artCategory" class="form-control" required>
+                            <option value="">Select a category</option>
+                            <option>AI</option>
+                            <option>Startups</option>
+                            <option>Design</option>
+                            <option>Research</option>
+                            <option>Projects</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="artThumb">Thumbnail</label>
+                        <input id="artThumb" type="file" class="form-control" accept="image/*" disabled>
+                        <p style="font-size:0.78rem; color:var(--text-muted); margin-top:8px;">Thumbnail uploads open once image hosting is connected.</p>
+                    </div>
+                    <div class="form-group">
+                        <label for="artContent">Content</label>
+                        <textarea id="artContent" class="form-control" rows="10" placeholder="Write your article here..." required></textarea>
+                    </div>
+                    <div style="display:flex; gap:14px; flex-wrap:wrap;">
+                        <button type="button" id="previewBtn" class="btn-outline">Preview</button>
+                        <button type="submit" class="btn-primary" disabled style="opacity:0.6; cursor:not-allowed;">Publish</button>
+                    </div>
+                    <p style="font-size:0.8rem; color:var(--text-muted); margin-top:14px;">Publishing opens once member accounts go live. Drafts aren't saved yet — copy your work before leaving this page.</p>
+                </form>
+            </div>
+
+            <div class="reveal-right">
+                <div class="card" style="margin-bottom:24px;">
+                    <h3>Writing Guidelines</h3>
+                    <p style="margin-top:10px;">Keep it specific, useful and written in your own voice. Build logs, lessons learned and honest founder stories perform best.</p>
+                </div>
+                <div id="previewPane" class="article-card" style="display:none;">
+                    <div class="article-thumb"><span class="article-cat" id="previewCat">General</span></div>
+                    <div class="article-body">
+                        <div class="article-meta"><span>You</span><span class="dot"></span><span>Draft</span></div>
+                        <h3 class="article-title" id="previewTitle">Untitled Article</h3>
+                        <p class="article-excerpt" id="previewContent">Your article content will appear here...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <a href="index.html" class="brand">IDSC<span class="brand-dot">.</span></a>
+            <p style="margin-top:16px;">Empowering students to innovate, build and lead the future.</p>
+            <div class="social-row">
+                <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                <a href="#" class="social-icon" aria-label="X">X</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="community.html">Community</a>
+            <a href="team.html">Team</a>
+            <a href="events.html">Events</a>
+        </div>
+        <div class="footer-col">
+            <h4>Get Involved</h4>
+            <a href="join.html">Join IDSC</a>
+            <a href="login.html">Member Login</a>
+            <a href="write-article.html">Write an Article</a>
+            <a href="chat.html">Community Chat</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>hello@idsc.community</p>
+            <p style="margin-top:8px;">+91 98765 43210</p>
+            <a href="contact.html" style="margin-top:14px;">Get in Touch →</a>
+        </div>
+    </div>
+    <div class="footer-bottom">&copy; 2026 IDSC — Innovation. Design. Startup. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

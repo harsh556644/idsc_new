@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join | IDSC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><span>IDSC.</span></div>
+<div id="page-transition"></div>
+<div class="cursor-glow"></div>
+
+<main>
+    <div class="split">
+        <div class="split-visual">
+            <div class="bg-fx" style="position:absolute;"><div class="blob blob-2"></div><div class="blob blob-3"></div></div>
+            <a href="index.html" class="brand" style="position:relative; z-index:2; margin-bottom:60px;">IDSC<span class="brand-dot">.</span></a>
+            <h1 style="position:relative; z-index:2; font-size:clamp(2rem,4vw,3rem); margin-bottom:20px;">Become a <span class="gradient">Member.</span></h1>
+            <p style="position:relative; z-index:2; color:var(--text-muted); max-width:420px; line-height:1.7;">Join 250+ students building, designing and launching projects together. Membership is free.</p>
+            <div style="position:relative; z-index:2; margin-top:40px; display:flex; gap:30px;">
+                <div><div class="stat-num" style="font-size:1.6rem;">250+</div><div class="stat-label">Members</div></div>
+                <div><div class="stat-num" style="font-size:1.6rem;">40+</div><div class="stat-label">Projects</div></div>
+            </div>
+        </div>
+        <div class="split-form">
+            <div class="auth-box reveal-right in" style="max-width:480px;">
+                <div class="card">
+                    <h2 style="font-size:1.8rem; margin-bottom:8px;">Join IDSC</h2>
+                    <p style="color:var(--text-muted); margin-bottom:28px; font-size:0.92rem;">Tell us a bit about yourself to get started.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="jName">Full Name</label>
+                            <input id="jName" type="text" class="form-control" placeholder="Jane Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jEmail">Email Address</label>
+                            <input id="jEmail" type="email" class="form-control" placeholder="jane@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jSchool">College / University</label>
+                            <input id="jSchool" type="text" class="form-control" placeholder="Your institution" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="jInterest">Primary Interest</label>
+                            <select id="jInterest" class="form-control" required>
+                                <option value="">Select one</option>
+                                <option>AI</option>
+                                <option>Startups</option>
+                                <option>Design</option>
+                                <option>Research</option>
+                                <option>Engineering</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="jPass">Create Password</label>
+                            <input id="jPass" type="password" class="form-control" placeholder="••••••••" required>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width:100%; padding:15px;">Create Account</button>
+                    </form>
+                    <p class="switch-link">Already a member? <a href="login.html">Log in</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
